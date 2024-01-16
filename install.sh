@@ -1,6 +1,7 @@
 set -e
-
-cd $(pwd)/$(dirname $0)
-dotfiles=$(find . -type f -name ".*" -printf "%f ")
 echo "Copying dotfiles:"
-cp -b -v $dotfiles ~/
+for dotfile in .bash_aliases .bashrc .gitconfig .tmux.conf .vimrc .zshrc
+do
+    echo "  $dotfile"
+    cp -bi $dotfile $HOME/$dotfile
+done

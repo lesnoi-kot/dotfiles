@@ -1,2 +1,7 @@
-export NVM_DIR="/home/yuko/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+alias dcoker="docker"
+alias dk="docker"
+alias pd="podman"
+alias nvm="fnm"
+
+# For zsh also available:
+# https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git

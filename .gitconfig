@@ -1,3 +1,6 @@
 [user]
 	email = yuriii.kovalyov@gmail.com
 	name = yuko
+
+[init]
+	defaultBranch = main

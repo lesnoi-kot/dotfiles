@@ -1,14 +1,14 @@
-# If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=/usr/local/go/bin:$HOME/go/bin:$HOME/.yarn/bin:$PATH
+
+# Remove command lines from the history list when the first character on the line is a space.
+setopt HIST_IGNORE_SPACE
+setopt HIST_IGNORE_DUPS
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
 # https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="amuse"
-
-# Don't put duplicate lines or lines starting with space in the history.
-HISTCONTROL=ignoreboth
+ZSH_THEME="strug"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -42,7 +42,7 @@ HISTCONTROL=ignoreboth
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
@@ -81,9 +81,6 @@ source $ZSH/oh-my-zsh.sh
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
-
-# Make less more friendly for non-text input files, see lesspipe(1)
-[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
 export VISUAL="/usr/bin/vim"
 export EDITOR="$VISUAL"
